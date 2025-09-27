@@ -1,126 +1,95 @@
-# 🌌 Interactive Black Hole Simulation
+# 🌌 Black Hole Explorer - React Application
 
-A cutting-edge 3D web application that simulates gravitational physics around a black hole using real-time ray tracing and WebGL shaders.
+A modern, interactive 3D black hole simulation built with React, Three.js, and Material-UI. This comprehensive educational platform combines cutting-edge web technologies with accurate physics simulations to create an impressive learning experience.
 
-## 🔬 Scientific Features
+## 🚀 Quick Start
 
-### **Schwarzschild Geodesics**
-- Accurate implementation of Einstein's field equations
-- Real-time ray tracing through curved spacetime
-- Proper handling of the Schwarzschild radius (event horizon)
+```bash
+# Install dependencies
+npm install
 
-### **Gravitational Lensing**
-- Visual demonstration of light bending around massive objects
-- Interactive lensing strength controls
-- Realistic distortion effects based on general relativity
+# Start development server
+npm run dev
 
-### **Accretion Disk Physics**
-- Hot matter spiraling into the black hole
-- Temperature gradient visualization (blue = hot, red = cool)
-- Realistic orbital mechanics and heating effects
+# Open http://localhost:3000 in your browser
+```
 
-### **Interactive Physics Simulation**
-- Real-time gravitational calculations
-- Particle system with proper orbital mechanics
-- Toggle between Newtonian and relativistic physics
+## 🌟 Features
 
-## 🚀 Technical Implementation
+### 🎮 Interactive 3D Simulation
+- **Real-time black hole visualization** using Three.js and React Three Fiber
+- **Custom physics engine** with gravitational calculations
+- **Particle system** showing matter accretion and orbital mechanics
+- **Orbital camera controls** for exploration
+- **Real-time performance monitoring** with FPS display
 
-### **Web Technologies**
-- **Three.js**: Industry-standard 3D graphics library
-- **WebGL**: Hardware-accelerated graphics rendering
-- **GLSL Shaders**: Custom compute shaders for physics simulation
-- **JavaScript ES6+**: Modern programming practices
+### 📚 Educational Content
+- **Comprehensive black hole guide** with scientific explanations
+- **Mathematical foundations** with interactive calculators
+- **Historical context** and key scientists
+- **Professional glossary** of scientific terms
+- **Step-by-step physics derivations**
 
-### **Physics Engine**
-- Schwarzschild metric implementation
-- Geodesic integration using Runge-Kutta methods
-- Real-time gravitational field calculations
-- Proper handling of event horizon physics
+### 🔬 Interactive Physics Calculators
+- **Schwarzschild radius calculator** for any black hole mass
+- **Gravitational lensing calculator** with real physics equations
+- **Real-time mathematical computations** using actual formulas
+- **Educational explanations** for each calculation
 
-### **Visual Effects**
-- Custom shader materials for black hole rendering
-- Particle systems for matter accretion
-- Dynamic lighting and atmospheric effects
-- Real-time performance monitoring
+## 🛠️ Technology Stack
 
-## 🎮 Interactive Controls
+- **React 18** - Modern React with hooks and functional components
+- **Three.js** - Industry-standard 3D graphics library
+- **React Three Fiber** - React renderer for Three.js
+- **Material-UI** - Professional component library
+- **Vite** - Fast build tool and development server
 
-- **Mouse**: Orbital camera controls
-- **Distance Slider**: Zoom in/out from the black hole
-- **Disk Brightness**: Control accretion disk luminosity
-- **Lensing Strength**: Adjust gravitational lensing effects
-- **Gravity Toggle**: Enable/disable physics simulation
-- **Reset Camera**: Return to default viewing angle
+## 📁 Project Structure
 
-## 📊 Performance Features
+```
+src/
+├── components/
+│   ├── Layout.jsx          # Main layout with navigation
+│   ├── Footer.jsx          # Footer component
+│   └── BlackHoleScene.jsx  # 3D simulation component
+├── pages/
+│   ├── SimulationPage.jsx  # Main 3D simulation page
+│   ├── AboutPage.jsx       # Educational content page
+│   └── PhysicsPage.jsx     # Mathematical foundations page
+├── App.jsx                 # Main app component with routing
+└── main.jsx                # Application entry point
+```
 
-- **Real-time FPS monitoring**
-- **Adaptive quality rendering**
-- **Hardware-accelerated physics**
-- **Optimized shader computations**
+## 🎯 Key Features
 
-## 🔧 Technical Specifications
+- **Real-time physics calculations** for gravitational effects
+- **Interactive calculators** for real physics computations
+- **Professional UI/UX** with Material-UI components
+- **Responsive design** that works on all devices
+- **Scientific accuracy** based on general relativity
 
-### **Black Hole Parameters**
-- Mass: 4.3 million solar masses (Sagittarius A*)
-- Schwarzschild Radius: ~12.7 million kilometers
-- Accretion Disk: Inner radius 1.5× Schwarzschild radius
-- Physics: General Relativity compliant
+## 🚀 Available Scripts
 
-### **Rendering Pipeline**
-- Resolution: Native device resolution
-- Frame Rate: 60 FPS target
-- Anti-aliasing: MSAA enabled
-- Tone Mapping: ACES Filmic for realistic lighting
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
 
-## 🌟 Educational Value
+## 🎓 Educational Value
 
-This simulation demonstrates:
-1. **General Relativity** in action
-2. **Black hole physics** and event horizons
-3. **Gravitational lensing** effects
-4. **Accretion disk** formation and heating
-5. **Modern web graphics** programming
-6. **Real-time physics** simulation
+This application demonstrates:
+- **Advanced Web Development** - Modern React with hooks and routing
+- **3D Graphics Programming** - Three.js with custom physics
+- **Scientific Computing** - Real physics equations and calculations
+- **Educational Design** - Interactive learning platform
+- **Professional UI/UX** - Material-UI with responsive design
 
-## 🚀 Getting Started
+## 🌌 Scientific Accuracy
 
-1. Open `index.html` in a modern web browser
-2. Wait for the simulation to load
-3. Use mouse controls to navigate around the black hole
-4. Experiment with the interactive controls
-5. Observe the gravitational physics in real-time
+The simulation is based on:
+- **Schwarzschild geodesics** from general relativity
+- **Gravitational lensing** using Einstein's deflection formula
+- **Accretion disk physics** with temperature gradients
+- **Event horizon** calculations using Schwarzschild radius
+- **Real physics equations** with step-by-step derivations
 
-## 🎓 Faculty Presentation Tips
-
-### **Key Talking Points**
-- **Scientific Accuracy**: Based on actual Schwarzschild solutions
-- **Real-time Physics**: Demonstrates complex calculations in real-time
-- **Educational Impact**: Makes abstract concepts visually accessible
-- **Technical Innovation**: Modern web technologies for scientific visualization
-
-### **Demonstration Flow**
-1. Start with camera overview showing the black hole system
-2. Zoom in to show the event horizon and accretion disk
-3. Demonstrate gravitational lensing by moving the camera
-4. Show particle physics with gravity enabled/disabled
-5. Explain the scientific principles behind each visual effect
-
-## 🔬 Scientific References
-
-- Schwarzschild, K. (1916). "Über das Gravitationsfeld eines Massenpunktes"
-- Einstein, A. (1915). "Die Feldgleichungen der Gravitation"
-- Thorne, K. S. (1994). "Black Holes and Time Warps"
-- Misner, C. W., Thorne, K. S., & Wheeler, J. A. (1973). "Gravitation"
-
-## 💻 System Requirements
-
-- Modern web browser with WebGL support
-- Hardware-accelerated graphics recommended
-- Minimum 4GB RAM for smooth performance
-- Internet connection for Three.js CDN
-
----
-
-*Created for educational and research purposes. This simulation provides an interactive way to explore the fascinating physics of black holes and general relativity.*
+Built with ❤️ using React, Three.js, and Material-UI
